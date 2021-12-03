@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_acceso.xml" value="0.33" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_admin_productos.xml" value="0.2584745762711864" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_check.xml" value="0.33" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_list_spin.xml" value="0.25" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_main2.xml" value="0.2689873417721519" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_principal.xml" value="0.12" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_radio.xml" value="0.33" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/layout/activity_rpt_productos.xml" value="0.22" />
+        <entry key="..\:/Documentos/Escuela/UPMH/cuatri_9/ProgramacionMovil/Corte_1/appMiCalculadora/app/src/main/res/menu/menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
