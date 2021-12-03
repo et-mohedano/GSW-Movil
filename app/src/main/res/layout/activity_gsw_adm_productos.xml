@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gswAdmProductos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:id="@+id/lytProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtTituloProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Administracion de productos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtTagPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTituloProducto"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtProd"
+            android:layout_width="wrap_content"
+            tools:text="Coca-cola"
+            android:layout_below="@id/txtTituloProducto"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentación:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagPro"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtPres"
+            android:layout_width="wrap_content"
+            tools:text="En latita de aluminio"
+            android:layout_below="@id/txtTagPro"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagCant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagPres"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtCant"
+            android:layout_width="wrap_content"
+            tools:text="52.5"
+            android:layout_below="@id/txtTagPres"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de caducidad:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagCant"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="wrap_content"
+            tools:text="03-12-2021"
+            android:layout_below="@id/txtTagCant"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:inputType="date"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagPrecioAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio de adquisición:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagFecha"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtPrecioAd"
+            android:layout_width="wrap_content"
+            tools:text="25.03"
+            android:layout_below="@id/txtTagFecha"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagPrecioVen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio de venta:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagPrecioAd"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtPrecioVen"
+            android:layout_width="wrap_content"
+            tools:text="54.5"
+            android:layout_below="@id/txtTagPrecioAd"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagProvedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proveedor:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagPrecioVen"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtProvedor"
+            android:layout_width="wrap_content"
+            tools:text="Coca-cola company"
+            android:layout_below="@id/txtTagPrecioVen"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagProvedor"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtCat"
+            android:layout_width="wrap_content"
+            tools:text="Bebida"
+            android:layout_below="@id/txtTagProvedor"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagUbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicación:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagCat"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtUbi"
+            android:layout_width="wrap_content"
+            tools:text="Refrigerador 3"
+            android:layout_below="@id/txtTagCat"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTagFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTagUbi"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        <EditText
+            android:id="@+id/edtFoto"
+            android:layout_width="wrap_content"
+            tools:text="CocaLata.jpg"
+            android:layout_below="@id/txtTagUbi"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnInsProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTagFoto"
+            android:layout_marginTop="26dp"
+            android:text="Insertar"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnModProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTagFoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            app:backgroundTint="#000000"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnEliProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTagFoto"
+            android:layout_alignParentEnd="true"
+            app:backgroundTint="#000000"
+            android:layout_marginTop="26dp"
+            android:text="Eliminar" />
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
