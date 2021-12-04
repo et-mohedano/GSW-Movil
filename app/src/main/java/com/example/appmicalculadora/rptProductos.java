@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.android.volley.Header;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -33,7 +32,7 @@ public class rptProductos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rpt_productos);
         lstProductos = (ListView) findViewById(R.id.lstProductos);
-        btnMostrar = (Button) findViewById(R.id.btnRptProducto);
+        btnMostrar = (Button) findViewById(R.id.btnPasProducto);
         btnMostrar2da = (Button) findViewById(R.id.btnRptProducto2);
         btnMostrar.setOnClickListener(new View.OnClickListener() {
             @Override

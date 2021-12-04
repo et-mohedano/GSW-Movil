@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gswRptProductos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <RelativeLayout
+        android:id="@+id/lytRptProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtRptProdTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Productos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <ListView
+            android:id="@+id/lstRptProductos"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/btnPasProducto"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnRptProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRptProdTitulo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Consultar"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnPasProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRptProdTitulo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:onClick="pas"
+            android:text="Administrar"
+            app:backgroundTint="#000000" />
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

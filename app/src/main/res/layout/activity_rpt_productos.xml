@@ -26,7 +26,7 @@
             android:text="Reporte de productos" />
 
         <Button
-            android:id="@+id/btnRptProducto"
+            android:id="@+id/btnPasProducto"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtTituloRptPro"
@@ -39,7 +39,7 @@
             android:id="@+id/lstProductos"
             android:layout_width="318dp"
             android:layout_height="509dp"
-            android:layout_below="@+id/btnRptProducto"
+            android:layout_below="@+id/btnPasProducto"
             android:layout_alignParentStart="true"
             android:layout_marginStart="44dp"
             android:layout_marginTop="22dp" />
@@ -53,7 +53,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginTop="44dp"
             android:layout_marginEnd="32dp"
-            android:layout_toEndOf="@+id/btnRptProducto"
+            android:layout_toEndOf="@+id/btnPasProducto"
             android:text="Consultar 2" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@
         tools:ignore="MissingConstraints">
 
     <RelativeLayout
-        android:id="@+id/lytProductos"
+        android:id="@+id/lytAdminProductos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp">
@@ -24,7 +24,8 @@
             android:gravity="center_horizontal"
             android:text="Administracion de productos"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="20dp" />
+            android:textStyle="bold"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/txtTagPro"
@@ -32,19 +33,44 @@
             android:layout_height="wrap_content"
             android:text="Producto:"
             android:textSize="15dp"
-            android:layout_below="@id/txtTituloProducto"
+            android:layout_below="@id/txtTagClave"
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtProd"
-            android:layout_width="wrap_content"
-            tools:text="Coca-cola"
-            android:layout_below="@id/txtTituloProducto"
-            android:layout_marginTop="13dp"
+            android:id="@+id/edtProdNombre"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtTagClave"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:singleLine="true"
+            android:hint="Coca-cola" />
+
+        <TextView
+            android:id="@+id/txtTagClave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clave:"
+            android:textSize="15dp"
+            android:layout_below="@id/txtTituloProducto"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <EditText
+            android:id="@+id/edtProdClave"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtTituloProducto"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:hint="025"
+            android:inputType="number" />
 
         <TextView
             android:id="@+id/txtTagPres"
@@ -56,15 +82,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtPres"
-            android:layout_width="wrap_content"
-            tools:text="En latita de aluminio"
+            android:id="@+id/edtProdPres"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagPro"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:hint="En lata"
+            android:singleLine="true" />
 
         <TextView
             android:id="@+id/txtTagCant"
@@ -76,16 +104,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtCant"
-            android:layout_width="wrap_content"
-            tools:text="52.5"
+            android:id="@+id/edtProdCant"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagPres"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:inputType="numberDecimal"
-            android:layout_height="wrap_content" />
+            android:hint="52"
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/txtTagFecha"
@@ -97,16 +126,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtFecha"
-            android:layout_width="wrap_content"
-            tools:text="03-12-2021"
+            android:id="@+id/edtProdFecha"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagCant"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
             android:inputType="date"
-            android:layout_height="wrap_content" />
+            android:hint="03-12-2021" />
 
         <TextView
             android:id="@+id/txtTagPrecioAd"
@@ -118,16 +148,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtPrecioAd"
-            android:layout_width="wrap_content"
-            tools:text="25.03"
+            android:id="@+id/edtProdPrecioAd"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagFecha"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
             android:inputType="numberDecimal"
-            android:layout_height="wrap_content" />
+            android:hint="25.03" />
 
         <TextView
             android:id="@+id/txtTagPrecioVen"
@@ -139,16 +170,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtPrecioVen"
-            android:layout_width="wrap_content"
-            tools:text="54.5"
+            android:id="@+id/edtProdPrecioVen"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagPrecioAd"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
             android:inputType="numberDecimal"
-            android:layout_height="wrap_content" />
+            android:hint="54.5" />
 
         <TextView
             android:id="@+id/txtTagProvedor"
@@ -160,15 +192,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtProvedor"
-            android:layout_width="wrap_content"
-            tools:text="Coca-cola company"
+            android:id="@+id/edtProdProvedor"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagPrecioVen"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:singleLine="true"
+            android:hint="Coca-cola" />
 
         <TextView
             android:id="@+id/txtTagCat"
@@ -180,15 +214,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtCat"
-            android:layout_width="wrap_content"
-            tools:text="Bebida"
+            android:id="@+id/edtProdCat"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagProvedor"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:singleLine="true"
+            android:hint="Bebida" />
 
         <TextView
             android:id="@+id/txtTagUbi"
@@ -200,15 +236,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtUbi"
-            android:layout_width="wrap_content"
-            tools:text="Refrigerador 3"
+            android:id="@+id/edtProdUbi"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagCat"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:singleLine="true"
+            android:hint="Refri 3" />
 
         <TextView
             android:id="@+id/txtTagFoto"
@@ -220,15 +258,17 @@
             android:layout_marginTop="26dp"
             android:layout_marginStart="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <EditText
-            android:id="@+id/edtFoto"
-            android:layout_width="wrap_content"
-            tools:text="CocaLata.jpg"
+            android:id="@+id/edtProdFoto"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/txtTagUbi"
-            android:layout_marginTop="13dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content" />
+            android:singleLine="true"
+            android:hint="Foto" />
 
         <Button
             android:id="@+id/btnInsProducto"
@@ -236,7 +276,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txtTagFoto"
             android:layout_marginTop="26dp"
-            android:text="Insertar"
+            android:textColor="@color/white"
+            android:text="Insert"
             app:backgroundTint="#000000" />
 
         <Button
@@ -246,8 +287,9 @@
             android:layout_below="@id/txtTagFoto"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="26dp"
-            app:backgroundTint="#000000"
-            android:text="Modificar" />
+            android:textColor="@color/white"
+            android:text="Update"
+            app:backgroundTint="#000000" />
 
         <Button
             android:id="@+id/btnEliProducto"
@@ -255,9 +297,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txtTagFoto"
             android:layout_alignParentEnd="true"
-            app:backgroundTint="#000000"
+            android:textColor="@color/white"
             android:layout_marginTop="26dp"
-            android:text="Eliminar" />
+            android:text="Delete"
+            app:backgroundTint="#000000" />
     </RelativeLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

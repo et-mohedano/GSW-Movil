@@ -34,7 +34,7 @@ public class adminProductos extends AppCompatActivity {
         edtPrecio = (EditText) findViewById(R.id.edtPrecio);
         edtCantidad = (EditText) findViewById(R.id.edtCantidad);
         edtActivo = (EditText) findViewById(R.id.edtActivo);
-        edtFoto = (EditText) findViewById(R.id.edtFoto);
+        edtFoto = (EditText) findViewById(R.id.edtProdFoto);
         edtStatus = (EditText) findViewById(R.id.edtStatus);
         btnInsertarProducto.setOnClickListener(new View.OnClickListener() {
             @Override
