@@ -44,7 +44,7 @@ public class gswRptProductos extends AppCompatActivity {
     public void mostrarProductos()
     {
         AsyncHttpClient cliente=new AsyncHttpClient();
-        String url="https://pw183110356.000webhostapp.com/progmovil/sitioweb/paginas/mostrarproductos.php";
+        String url="https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/CONSULTARPRODUCTOS.php";
 
         cliente.post(url, null, new AsyncHttpResponseHandler() {
 
@@ -67,7 +67,7 @@ public class gswRptProductos extends AppCompatActivity {
             JSONArray jsonDatos;
             jsonDatos = new JSONArray(response);
             for (int i = 0; i < jsonDatos.length(); i++) {
-                lista.add(jsonDatos.getJSONObject(i).getString("CLAVE") + "-" + jsonDatos.getJSONObject(i).getString("PRODUCTO") + "-" + jsonDatos.getJSONObject(i).getString("COSTO"));
+                lista.add(jsonDatos.getJSONObject(i).getString("CLAVE") + "-" + jsonDatos.getJSONObject(i).getString("NOMBRE") + "-" + jsonDatos.getJSONObject(i).getString("PRESENTACION")+ "-" + jsonDatos.getJSONObject(i).getString("PRECIO_VENTA")+ "-" + jsonDatos.getJSONObject(i).getString("CANTIDAD"));
                 datos = "1";
             }
             adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lista);

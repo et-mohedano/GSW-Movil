@@ -133,16 +133,19 @@ public class gswAdmProductos extends AppCompatActivity {
     public String insProducto(){
         Toast.makeText(getApplicationContext(), "Insercion en preceso: ", Toast.LENGTH_SHORT).show();
 
-        String parametros="nom=RefrescoLimon&desc=limon&precio=25&cantidad=2&foto=imagenes/refresco.png";
+        String parametros;
         if(edtProducto.getText().equals("")||edtPres.getText().equals("")||edtCant.getText().equals("")||edtFecha.getText().equals("")||edtPrecioAd.getText().equals("")||edtPrecioVen.getText().equals("")||edtProveedor.getText().equals("")||edtCat.getText().equals("")||edtUbi.getText().equals("")||edtFoto.getText().equals("")){
             Toast.makeText(getApplicationContext(), "Error: No deje ningún campo vacio", Toast.LENGTH_SHORT).show();
-            parametros="";
+            parametros = "";
+        }else{
+            parametros="prov=" + edtProveedor.getText() + "&pres=" + edtPres.getText() + "&nombre=" + edtProducto.getText() + "&cant=" + edtCant.getText() + "&caduc=" + edtFecha.getText() + "&usu=1&ven=" + edtPrecioVen.getText() + "&adqu=" + edtPrecioAd.getText() + "&foto=" + edtFoto.getText();
+            Toast.makeText(getApplicationContext(), "Parametros: " + parametros, Toast.LENGTH_LONG).show();
+//          https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/INSESTARPRODUCTOS.php?prov=3&pres=3&nombre=WapITas&cant=6&caduc=2022-05-20&usu=3&ven=15&adqu=10&foto=imagenes/wapas
         }
-        //String parametros="nom=" + edtNombre.getText() + "&desc=" + edtDescripcion.getText() + "&precio=" + edtPrecio.getText() + "&cantidad=" + edtCantidad.getText() + "&foto=" + edtFoto.getText();
         HttpURLConnection con=null;
         String resultado="";
         try {
-            URL url = new URL("https://pw183110356.000webhostapp.com/progmovil/sitioweb/paginas/insertarproducto.php");
+            URL url = new URL("https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/INSESTARPRODUCTOS.php");
             con=(HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
             con.setRequestProperty("Content-Length",""+Integer.toString(parametros.getBytes().length));
