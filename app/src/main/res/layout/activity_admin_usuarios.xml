@@ -195,7 +195,7 @@
             android:layout_below="@+id/edtRolUsu"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="40"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/btnModificarUsu"
             android:text="Eliminar"
