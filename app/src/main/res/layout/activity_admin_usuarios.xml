@@ -33,22 +33,18 @@
             android:id="@+id/txtNomUsu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtTituloAdminUsuarios"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txtIdUsu"
+            android:layout_marginTop="35dp"
             android:text="Nombre:" />
 
         <EditText
             android:id="@+id/edtNomUsu"
-            android:layout_width="168dp"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtTituloAdminUsuarios"
+            android:layout_below="@+id/edtIdUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="78dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtNomUsu"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -57,21 +53,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtNomUsu"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
             android:layout_marginTop="35dp"
             android:text="Apellido paterno:" />
 
         <EditText
             android:id="@+id/edtPatUsu"
-            android:layout_width="wrap_content"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtNomUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="28dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtPatUsu"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -80,21 +72,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtPatUsu"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
             android:layout_marginTop="40dp"
             android:text="Apellido materno:" />
 
         <EditText
             android:id="@+id/edtMatUsu"
-            android:layout_width="wrap_content"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtPatUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="21dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtMatUsu"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -103,8 +91,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtMatUsu"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
             android:layout_marginTop="40dp"
             android:text="Teléfono" />
 
@@ -114,10 +100,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtMatUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="80dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtTelUsu"
             android:ems="10"
             android:inputType="phone" />
 
@@ -137,10 +121,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtTelUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtPerfil"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -156,14 +138,12 @@
 
         <EditText
             android:id="@+id/edtPasswordUsu"
-            android:layout_width="wrap_content"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtPerfilUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="64dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtPassword"
             android:ems="10"
             android:inputType="numberPassword" />
 
@@ -183,10 +163,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtPasswordUsu"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="116dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="34dp"
-            android:layout_toEndOf="@+id/txtRolUsu"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -195,8 +173,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtRolUsu"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
             android:layout_marginTop="40dp"
             android:text="Insertar" />
 
@@ -221,6 +197,25 @@
             android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/btnModificarUsu"
             android:text="Eliminar" />
+
+        <TextView
+            android:id="@+id/txtIdUsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTituloAdminUsuarios"
+            android:layout_marginTop="30dp"
+            android:text="ID:" />
+
+        <EditText
+            android:id="@+id/edtIdUsu"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTituloAdminUsuarios"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
