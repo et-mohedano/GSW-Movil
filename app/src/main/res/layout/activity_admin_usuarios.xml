@@ -96,7 +96,7 @@
 
         <EditText
             android:id="@+id/edtTelUsu"
-            android:layout_width="185dp"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtMatUsu"
             android:layout_alignParentEnd="true"
@@ -159,7 +159,7 @@
 
         <EditText
             android:id="@+id/edtRolUsu"
-            android:layout_width="wrap_content"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtPasswordUsu"
             android:layout_alignParentEnd="true"
@@ -174,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtRolUsu"
             android:layout_marginTop="40dp"
-            android:text="Insertar" />
+            android:text="Insertar"
+            app:backgroundTint="#000000"/>
 
         <Button
             android:id="@+id/btnModificarUsu"
@@ -184,7 +185,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="40dp"
             android:layout_toEndOf="@+id/btnInsertarUsu"
-            android:text="Modificar" />
+            android:text="Modificar"
+            app:backgroundTint="#000000"/>
 
         <Button
             android:id="@+id/btnEliminarUsu"
@@ -196,7 +198,8 @@
             android:layout_marginTop="40"
             android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/btnModificarUsu"
-            android:text="Eliminar" />
+            android:text="Eliminar"
+            app:backgroundTint="#000000"/>
 
         <TextView
             android:id="@+id/txtIdUsu"
