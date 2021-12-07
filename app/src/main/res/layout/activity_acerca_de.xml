@@ -4,6 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".acercaDe">
 
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/txtAcercaDeTitulo"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="0dp"
+            android:text="Acerca de" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
