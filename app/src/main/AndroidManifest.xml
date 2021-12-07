@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMiCalculadora">
         <activity
+            android:name=".acercaDe"
+            android:exported="true" />
+        <activity
             android:name=".adminUsuarios"
             android:exported="true" />
         <activity
