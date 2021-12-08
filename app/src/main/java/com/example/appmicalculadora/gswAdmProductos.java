@@ -171,14 +171,15 @@ public class gswAdmProductos extends AppCompatActivity {
     public String modificarProducto(){
         Toast.makeText(getApplicationContext(), "Modificación en preceso: ", Toast.LENGTH_SHORT).show();
 
-        String parametros="id=7&nom=Refresco3&desc=limon&precio=25&cantidad=2&foto=imagenes/refresco.png";
+//        String parametros="id=7&nom=Refresco3&desc=limon&precio=25&cantidad=2&foto=imagenes/refresco.png";
         if(edtClave.getText().equals("")||edtProducto.getText().equals("")||edtPres.getText().equals("")||edtCant.getText().equals("")||edtFecha.getText().equals("")||edtPrecioAd.getText().equals("")||edtPrecioVen.getText().equals("")||edtProveedor.getText().equals("")||edtCat.getText().equals("")||edtUbi.getText().equals("")||edtFoto.getText().equals("")){
             Toast.makeText(getApplicationContext(), "Error: No deje ningún campo vacio", Toast.LENGTH_SHORT).show();
         }
-        //String parametros="id=" + edtClave.getText() + "nom=" + edtNombre.getText() + "&desc=" + edtDescripcion.getText() + "&precio=" + edtPrecio.getText() + "&cantidad=" + edtCantidad.getText() + "&foto=" + edtFoto.getText();
+        String parametros="cve=" + edtClave.getText() + "&prov=" + edtProveedor.getText() + "&pres=" + edtPres.getText() + "&nombre=" + edtProducto.getText() + "&cant=" + edtCant.getText() + "&caduc=" + edtFecha.getText() + "&usu=1&ven=" + edtPrecioVen.getText() + "&adq=" + edtPrecioAd.getText() + "&foto=" + edtFoto.getText();
         HttpURLConnection con=null;
         String resultado="";
         try {
+//          https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/MODIFICARPRODUCTOS.php?cve=20&prov=3&pres=3&nombre=Wapas&cant=6&caduc=2022-05-20&usu=3&ven=15&adqu=10&foto=paginas/imagenes/productos/Wapas.jpg
             URL url = new URL("https://pw183110356.000webhostapp.com/progmovil/sitioweb/paginas/modificarproducto.php");
             con=(HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
@@ -206,15 +207,16 @@ public class gswAdmProductos extends AppCompatActivity {
     public String eliminarProducto(){
         Toast.makeText(getApplicationContext(), "Eliminación en preceso: ", Toast.LENGTH_SHORT).show();
 
-        String parametros="id=7";
+//        String parametros="id=7";
         if(edtClave.getText().equals("")){
             Toast.makeText(getApplicationContext(), "Error: Se necesita la clave del producto para eliminar", Toast.LENGTH_SHORT).show();
         }
-        //String parametros="id=" + edtClave.getText();
+        String parametros="cve=" + edtClave.getText();
         HttpURLConnection con=null;
         String resultado="";
         try {
-            URL url = new URL("https://pw183110356.000webhostapp.com/progmovil/sitioweb/paginas/eliminarproducto.php");
+//          https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/ELIMINARPRODUCTOS.php?cve=1
+            URL url = new URL("https://pw183110356.000webhostapp.com/practicas/GSW/sitioweb/paginas/ELIMINARPRODUCTOS.php");
             con=(HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
             con.setRequestProperty("Content-Length",""+Integer.toString(parametros.getBytes().length));
