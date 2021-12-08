@@ -40,8 +40,8 @@
             android:layout_below="@id/txtRptProdTitulo"
             android:layout_alignParentStart="true"
             android:layout_marginTop="20dp"
+            android:text="Consult"
             android:textColor="@color/white"
-            android:text="Consultar"
             app:backgroundTint="#000000" />
 
         <Button
@@ -51,9 +51,9 @@
             android:layout_below="@id/txtRptProdTitulo"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:textColor="@color/white"
             android:onClick="pas"
-            android:text="Administrar"
+            android:text="Manage"
+            android:textColor="@color/white"
             app:backgroundTint="#000000" />
     </RelativeLayout>
     </ScrollView>
