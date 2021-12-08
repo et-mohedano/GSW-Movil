@@ -114,8 +114,4 @@ public class AccesoActivity extends AppCompatActivity {
         }
         return resultadoId;
     }
-    public void regresar(View view) {
-        Intent acc = new Intent(this, MainActivity.class);
-        startActivity(acc);
-    }
 }

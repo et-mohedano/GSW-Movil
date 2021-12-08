@@ -16,7 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMiCalculadora">
         <activity
-            android:name=".gswLogin"
+            android:name=".acercaDe"
+            android:exported="true" />
+        <activity
+            android:name=".adminUsuarios"
+            android:exported="true" />
+        <activity
+            android:name=".adminProductos"
+            android:exported="true" />
+        <activity
+            android:name=".rptProductos"
             android:exported="true" />
         <activity
             android:name=".gswRptProductos"
