@@ -6,15 +6,142 @@
     android:layout_height="match_parent"
     tools:context=".gswLogin">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtLogFoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:gravity="center_horizontal"
+            android:text="Derechos Reservados"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white" />
+    </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lytLogPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lytLogHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgLogLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logogsw" />
+
+                <TextView
+                    android:id="@+id/txtLogTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/imgLogLogo"
+                    android:gravity="center_horizontal"
+                    android:text="GrasShopperWeb"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLogLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lytLogHeader"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:gravity="center_horizontal"
+                android:text="Iniciar Sesión"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lytLogAreaTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLogLine"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtLogTag1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Ingresa tu usuario:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/edtLogUsu"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogTag1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde_redondo"
+                    android:gravity="center_horizontal"
+                    android:hint="User" />
+
+                <TextView
+                    android:id="@+id/txtLogTag2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtLogUsu"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="Ingresa tu contraseña:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/edtLogPwd"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogTag2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde_redondo"
+                    android:gravity="center_horizontal"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnLogLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Login"
+                    android:layout_below="@id/edtLogPwd"
+                    android:layout_marginTop="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnLogPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnLogLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/black"
+                    android:onClick="pas"
+                    android:text="Pass"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

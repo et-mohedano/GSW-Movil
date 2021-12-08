@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:textAlignment="center"
     tools:context=".acercaDe">
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ScrollView
             android:id="@+id/ScrollView02AcercaDe"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
         <RelativeLayout
-            android:layout_width="409dp"
-            android:layout_height="729dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:padding="20dp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="1dp"
@@ -21,14 +21,14 @@
 
             <TextView
                 android:id="@+id/txtAcercaDeTitulo"
-                style="@style/Widget.AppCompat.TextView.SpinnerItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="120dp"
                 android:layout_marginTop="0dp"
-                android:text="Acerca de" />
+                android:text="Acerca de"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
             <TextView
                 android:id="@+id/txtDescipcionAcercaDe"

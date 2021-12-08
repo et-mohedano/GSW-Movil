@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/Registrar"
+        android:id="@+id/Productos"
         android:icon="@android:drawable/ic_menu_camera"
-        android:title="Registrar"
+        android:title="Productos"
         ></item>
     <item
-        android:id="@+id/Consultar"
+        android:id="@+id/Usuarios"
         android:icon="@android:drawable/ic_menu_camera"
-        android:title="Consultar"
+        android:title="Usuarios"
         ></item>
     <item
-        android:id="@+id/Seleccionar"
+        android:id="@+id/AcercaDe"
         android:icon="@android:drawable/ic_menu_camera"
-        android:title="Seleccionar"
+        android:title="Acerca De"
+        ></item>
+    <item
+        android:id="@+id/Salir"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Salir"
         ></item>
 </menu>

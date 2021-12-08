@@ -14,19 +14,22 @@ public class PrincipalActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Verificar opción seleccionada
         switch (item.getItemId()){
-            case R.id.Registrar:
-                Intent reg = new Intent(this, adminProductos.class);
+            case R.id.Productos:
+                Intent reg = new Intent(this, gswRptProductos.class);
                 startActivity(reg);
                 return true;
-            case R.id.Consultar:
-                Intent con = new Intent(this, rptProductos.class);
+            case R.id.Usuarios:
+                Intent con = new Intent(this, adminUsuarios.class);
                 startActivity(con);
                 return true;
-            case R.id.Seleccionar:
-                Intent sel = new Intent(this, CheckActivity.class);
+            case R.id.AcercaDe:
+                Intent sel = new Intent(this, acercaDe.class);
                 startActivity(sel);
                 return true;
-
+            case R.id.Salir:
+                Intent sal = new Intent(this, gswLogin.class);
+                startActivity(sal);
+                return true;
                 default:
                     return super.onOptionsItemSelected(item);
         }

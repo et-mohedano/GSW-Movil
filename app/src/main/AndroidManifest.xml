@@ -29,25 +29,23 @@
             android:exported="true" />
         <activity
             android:name=".gswRptProductos"
-            android:exported="true">
+            android:exported="true"/>
+        <activity
+            android:name=".gswAdmProductos"
+            android:exported="true" />
+        <activity
+            android:name=".gswLogin"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".gswAdmProductos"
-            android:exported="true" />
-        <activity
-            android:name=".adminProductos"
-            android:exported="true" />
-        <activity
-            android:name=".rptProductos"
-            android:exported="true" />
-        <activity
             android:name=".PrincipalActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".AccesoActivity"
             android:exported="true" />
