@@ -49,7 +49,7 @@ public class AccesoActivity extends AppCompatActivity {
                                     String valor=objJSON(res);
                                     if (!valor.equals("0")){
                                         Toast.makeText(getApplicationContext(), "Bienvenido " + resultadoNom, Toast.LENGTH_SHORT).show();
-                                        Intent reg = new Intent(getApplicationContext(), MainActivity.class);
+                                        Intent reg = new Intent(getApplicationContext(), acercaDe.class);
                                         startActivity(reg);
                                     }
                                     else

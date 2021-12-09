@@ -33,6 +33,8 @@ public class gswRptProductos extends AppCompatActivity {
         lstProductos = (ListView) findViewById(R.id.lstRptProductos);
         btnConsultar = (Button) findViewById(R.id.btnRptProducto);
 
+        getSupportActionBar().hide();
+
         btnConsultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

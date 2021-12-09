@@ -35,6 +35,9 @@ public class adminUsuarios extends AppCompatActivity {
         edtPerfil = (EditText) findViewById(R.id.edtPerfilUsu);
         edtContrasena = (EditText) findViewById(R.id.edtPasswordUsu);
         edtRol = (EditText) findViewById(R.id.edtRolUsu);
+
+        getSupportActionBar().hide();
+
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

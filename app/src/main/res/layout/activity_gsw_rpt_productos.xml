@@ -13,48 +13,82 @@
     <RelativeLayout
         android:id="@+id/lytRptProductos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/lytRptProHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgRptProLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logogsw" />
+
+                <TextView
+                    android:id="@+id/txtRptProTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/imgRptProLogo"
+                    android:gravity="center_horizontal"
+                    android:text="GrasShopperWeb"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
 
         <TextView
-            android:id="@+id/txtRptProdTitulo"
+            android:id="@+id/txtRptProLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/lytRptProHeader"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
             android:gravity="center_horizontal"
             android:text="Productos"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textStyle="bold"
-            android:textSize="25dp" />
+            android:textColor="@color/white" />
 
-        <ListView
-            android:id="@+id/lstRptProductos"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_below="@+id/btnPasProducto"
-            android:layout_marginTop="20dp" />
+            android:padding="20dp"
+            android:layout_below="@id/txtRptProLine"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btnRptProducto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtRptProdTitulo"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="20dp"
-            android:text="Consult"
-            android:textColor="@color/white"
-            app:backgroundTint="#000000" />
+            <ListView
+                android:id="@+id/lstRptProductos"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/btnPasProducto"
+                android:layout_marginTop="20dp" />
 
-        <Button
-            android:id="@+id/btnPasProducto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtRptProdTitulo"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:onClick="pas"
-            android:text="Manage"
-            android:textColor="@color/white"
-            app:backgroundTint="#000000" />
+            <Button
+                android:id="@+id/btnRptProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Consult"
+                android:textColor="@color/white"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/btnPasProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:onClick="pas"
+                android:text="Manage"
+                android:textColor="@color/white"
+                app:backgroundTint="#000000" />
+
+        </RelativeLayout>
+
     </RelativeLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

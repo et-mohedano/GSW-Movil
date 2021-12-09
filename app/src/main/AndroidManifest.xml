@@ -22,9 +22,6 @@
             android:name=".adminUsuarios"
             android:exported="true" />
         <activity
-            android:name=".adminProductos"
-            android:exported="true" />
-        <activity
             android:name=".rptProductos"
             android:exported="true" />
         <activity
@@ -48,21 +45,6 @@
             android:exported="true"/>
         <activity
             android:name=".AccesoActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ListSpinActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CheckActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RadioActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true" />
     </application>
 

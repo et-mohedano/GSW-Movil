@@ -41,6 +41,8 @@ public class gswAdmProductos extends AppCompatActivity {
         edtFoto = (EditText) findViewById(R.id.edtProdFoto);
         edtClave = (EditText) findViewById(R.id.edtProdClave);
 
+        getSupportActionBar().hide();
+
         btnInsertarProducto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
