@@ -226,6 +226,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="7dp"
                 android:text="183110447"
+                android:layout_marginBottom="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </RelativeLayout>
     </ScrollView>

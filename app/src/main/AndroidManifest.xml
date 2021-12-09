@@ -43,9 +43,6 @@
         <activity
             android:name=".PrincipalActivity"
             android:exported="true"/>
-        <activity
-            android:name=".AccesoActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
